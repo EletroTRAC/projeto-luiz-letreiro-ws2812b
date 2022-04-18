@@ -1,2 +1,2 @@
-#define SSID "Bosta no ventilador"
-#define PASS "barbosa2022"
+#define SSID "NOME_DA_REDE_AQUI"
+#define PASS "SENHA_DA_REDE_WIFI_AQUI"
