@@ -1,0 +1,17 @@
+Projetos horas de produção:
+    -13/04/2022:
+        Inicio: 22:30
+        Término: 00:30
+    -16/04/2022:
+        Inicio: 15:15
+        Término: 19:15
+        Pausa: 20:00 - 23:00
+        Inicio: 23:00
+        Término: 00:20
+    -17/04/2022:
+        Inicio: 9:00
+        Término: 10:30
+    -18/04/2022:
+        Inicio: 15:05
+        Término: 15:30
+    //FINALIZADO//
