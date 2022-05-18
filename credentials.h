@@ -1,2 +1,0 @@
-#define SSID "NOME_DA_REDE_AQUI"
-#define PASS "SENHA_DA_REDE_WIFI_AQUI"
