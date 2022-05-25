@@ -3,15 +3,17 @@
 #include <AHTxx.h>
 #include <WiFi.h>
 #include <WiFiManager.h>
+#include <Adafruit_NeoPixel.h>
 #include "time.h"
 
-#define NUM_LEDS 300
-#define DATA_PIN 16
+#define NUMPIXELS 300
+#define PIN 16
+#define BRIGHTNESS 255
 
 int R = 0, G = 150, B = 255;
 int R_d = 0, G_d = 0, B_d = 0;
 
-CRGB leds[NUM_LEDS];
+Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_RGB + NEO_KHZ800);
 
 AHTxx aht10(AHTXX_ADDRESS_X38, AHT1x_SENSOR);
 float ahtValue;
@@ -35,7 +37,9 @@ void setup(void) {
 
     initWiFi();
     
-    FastLED.addLeds<WS2812B, DATA_PIN, RGB>(leds, NUM_LEDS);
+    strip.begin();           // INITIALIZE NeoPixel strip object (REQUIRED)
+    strip.show();            // Turn OFF all pixels ASAP
+    strip.setBrightness(BRIGHTNESS);
 
     while (aht10.begin() != true)
     {
